@@ -1,8 +1,12 @@
-export default function Input () {
+import {useState } from 'react';
+
+export default function Input (props) {
+  const [text, setText] = useState ("")
+  
   return (
     <div>
-    <input type="text"/>
-    <button>Add</button>
+    <input onChange={(event) => setText (event.target.value) } type="text"/>
+    <button onClick={() => props.add(text)}>Add</button>
     </div>
   );
 }
