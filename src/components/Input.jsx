@@ -5,7 +5,7 @@ export default function Input (props) {
   
   return (
     <div>
-    <input onChange={(event) => setText (event.target.value) } type="text"/>
+    <input onChange={(event) => setText (event.target.value)} type="text"/>
     <button onClick={() => props.add(text)}>Add</button>
     </div>
   );

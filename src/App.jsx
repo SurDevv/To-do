@@ -30,12 +30,13 @@ function delTask (taskName) {
 }
 
 function addTask (text) {
-  console.log (text)
   const newTask = {
     name: text,
     status:"TODO"}
     setTasks ([...tasks, newTask]) 
 }
+
+
 
   return (
     <main className='main'>
