@@ -6,8 +6,8 @@ export default function Box (props) {
     <div className="box">
       <h2>{props.title}</h2>
       <div>
-        {props.items.map((item)=>{
-        return <Item description = {item.name}  delFunction = {props.delFunction}/>
+        {props.items.map((item, index)=>{
+        return <Item description = {item.name}  delFunction = {props.delFunction} itemIndex = {index+1} moveForward = {props.moveForward} moveBack = {props.moveBack} status = {item.status}/>
          })}
       </div>
     </div>
