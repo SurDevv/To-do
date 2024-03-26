@@ -1,15 +1,25 @@
-import Item from "../Item";
-import "./Box.css"
-export default function Box (props) {
-  
+import Item from "./Item/Item";
+import "./Box.css";
+export default function Box(props) {
   return (
     <div className="box">
-      <h2>{props.title}</h2>
+      <div className="box-title">
+        <h2>{props.title}</h2>
+      </div>
       <div>
-        {props.items.map((item, index)=>{
-        return <Item description = {item.name}  delFunction = {props.delFunction} itemIndex = {index+1} moveForward = {props.moveForward} moveBack = {props.moveBack} status = {item.status}/>
-         })}
+        {props.items.map((item, index) => {
+          return (
+            <Item
+              description={item.name}
+              delFunction={props.delFunction}
+              itemIndex={index + 1}
+              moveForward={props.moveForward}
+              moveBack={props.moveBack}
+              status={item.status}
+            />
+          );
+        })}
       </div>
     </div>
-  )
+  );
 }

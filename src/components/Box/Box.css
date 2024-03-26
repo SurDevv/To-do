@@ -1,5 +1,38 @@
 .box {
-  border: 1px solid rgb(12, 11, 37);
+  border: 1em solid rgb(100, 76, 10);
+  background-color: rgb(206, 165, 0);
   width: 30%;
-  height: 500px;
+  margin: 1.5em;
+  border-radius: 7em;
+}
+
+.box-title {
+  background-color: blanchedalmond;
+}
+
+.box h2 {
+  text-align: center;
+  font-size: 10em;
+  padding-top: 0.8em;
+}
+
+.item {
+  background-color: rgb(217, 195, 105);
+  padding: 7em;
+  margin: 10em;
+  border-radius: 20em;
+}
+
+.item p {
+  font-size: 8em;
+}
+
+.item button {
+  font-size: 6.5em;
+}
+
+.item-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
