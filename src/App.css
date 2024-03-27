@@ -10,6 +10,7 @@
   font-style: normal;
   background-image:url(/src/images/paper-texture.jpg)
  }
+ 
 
  button {
   font-size: 1em;
@@ -17,9 +18,11 @@
   font-weight: 400;
   font-style: normal;
  }
- 
+
 .task-board {
   display: flex;
   gap: 5rem;
   justify-content: space-evenly;
+  width: 90%;
+  max-width: 50rem;
 }

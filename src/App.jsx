@@ -67,7 +67,7 @@ function App() {
   }
 
   return (
-    <main className="main">
+    <>
       <Input add={addTask} />
       <div className="task-board">
         <Box
@@ -92,7 +92,7 @@ function App() {
           moveBack={moveBack}
         />
       </div>
-    </main>
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ export default function Box(props) {
       <div className="box-title">
         <h2>{props.title}</h2>
       </div>
-      <div>
+      <div className="box-item">
         {props.items.map((item, index) => {
           return (
             <Item

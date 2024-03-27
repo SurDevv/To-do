@@ -2,7 +2,7 @@ export default function Item(props) {
   return (
     <div className="item">
       <p>
-        <strong>{props.itemIndex}. </strong>
+        <strong className="item-number">{props.itemIndex}. </strong>
         {props.description}
       </p>
       <div className="item-buttons">
